@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-tikz-bayesnet
 Version:	0.1
-Release:	9
+Release:	10
 Summary:	Draw Bayesian networks, graphical models and directed factor graphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikz-bayesnet

@@ -3,7 +3,7 @@ Version:	38295
 Release:	2
 Summary:	Draw Bayesian networks, graphical models and directed factor graphs
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikz-bayesnet
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikz-bayesnet
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.doc.r%{version}.tar.xz

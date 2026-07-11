@@ -1,31 +1,21 @@
-Name:		texlive-tikz-bayesnet
-Version:	38295
-Release:	2
+%global tl_name tikz-bayesnet
+%global tl_revision 38295
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.1
+Release:	%{tl_revision}.1
 Summary:	Draw Bayesian networks, graphical models and directed factor graphs
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikz-bayesnet
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tikz-bayesnet.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides a library supporting the display of
-Bayesian networks, graphical models and (directed) factor
-graphs in LaTeX.
+The package provides a library supporting the display of Bayesian
+networks, graphical models and (directed) factor graphs in LaTeX.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/tikz-bayesnet
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
